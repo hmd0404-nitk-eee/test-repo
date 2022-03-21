@@ -1,0 +1,385 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.outputContainer {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+    color: #c8d1d9;
+}
+
+.darkMode {
+    background-color: #0d1116;
+    width: 100vw;
+    padding: 1em;
+}
+
+a {
+    color: #58a5ff;
+    text-decoration: none;
+}
+
+.inputTxt {
+    background-color: #161b22;
+    color: #c8d1d9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-default {
+    font-family: Inter;
+}
+
+.menuTxt {
+    color: #334d6e;
+    line-height: 2.5em;
+    transition: 0.25s ease-out;
+}
+
+.activeMenuColor {
+    color: #109cf1;
+    border-color: #109cf1;
+}
+
+.ssosecFlavourMD {
+    /**
+ * Unreset CSS
+ *
+ * Copyright (C) 2016 Kite (ixkaito@gmail.com)
+ * License MIT
+ * Version 1.0.0
+ *
+ * Unreset CSS restores browsers' default element styles which are reset by
+ * Eric Meyer's Reset CSS, YUI 3 Reset CSS, HTML5 Reset Stylesheet of HTML5
+ * Doctor, or Tim Murtaugh's HTML5 Reset.
+ */
+
+    pre, code {
+        background-color: #edf1f5;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 1em;
+        font-family: 'Source Code Pro';
+        font-weight: 400;
+        letter-spacing: 0.02rem;
+        font-style: italic;
+    }
+
+    html {
+        box-sizing: content-box;
+        font-family: 'Inter';
+    }
+
+    body {
+        margin: 8px;
+        line-height: normal;
+    }
+
+    p {
+        margin: 1em 0;
+        font-weight: 300;
+        color: #242424;
+    }
+
+    blockquote,
+    figure {
+        margin: 1em 40px;
+    }
+
+    q {
+        quotes: "“" "”" "‘" "’";
+
+        &:before {
+            content: open-quote;
+        }
+
+        &:after {
+            content: close-quote;
+        }
+    }
+
+    hr {
+        border: 1px inset;
+        box-sizing: border-box;
+        margin: 0.5em auto;
+    }
+
+    h1 {
+        font-size: 2.125rem;
+        font-weight: 500;
+        margin: 0.67em 0;
+        line-height: 29px;
+        padding-bottom: 0.3em;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0.83em 0;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin: 1em 0;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    }
+
+    h4 {
+        font-size: 1em;
+        font-weight: 500;
+        margin: 1.33em 0;
+    }
+
+    h5 {
+        font-size: 0.83em;
+        font-weight: 500;
+        margin: 1.67em 0;
+    }
+
+    h6 {
+        font-size: 0.67em;
+        font-weight: 500;
+        margin: 2.33em 0;
+    }
+
+    article,
+    aside,
+    nav,
+    section {
+        h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0.83em 0;
+        }
+
+        article,
+        aside,
+        nav,
+        section {
+            h1 {
+                font-size: 1.17em;
+                font-weight: bold;
+                margin: 1em 0;
+            }
+
+            article,
+            aside,
+            nav,
+            section {
+                h1 {
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin: 1.33em 0;
+                }
+
+                article,
+                aside,
+                nav,
+                section {
+                    h1 {
+                        font-size: 0.83em;
+                        font-weight: bold;
+                        margin: 1.67em 0;
+                    }
+
+                    article,
+                    aside,
+                    nav,
+                    section {
+                        h1 {
+                            font-size: 0.67em;
+                            font-weight: bold;
+                            margin: 2.33em 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 2px;
+        border-color: gray;
+    }
+
+    thead,
+    tbody,
+    tfoot,
+    tr {
+        border-color: inherit;
+        vertical-align: middle;
+    }
+
+    td,
+    th {
+        padding: 1px;
+        vertical-align: inherit;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    caption {
+        text-align: center;
+    }
+
+    ul,
+    menu {
+        list-style-type: disc;
+        margin: 1em 0;
+        padding: 0 0 0 40px;
+        color: #242424;
+        font-weight: 300;
+    }
+
+    ol {
+        list-style-type: decimal;
+        margin: 1em 0;
+        padding: 0 0 0 40px;
+    }
+
+    ul,
+    ol {
+        ul {
+            list-style-type: circle;
+        }
+
+        ul,
+        ol {
+            ul {
+                list-style-type: square;
+            }
+        }
+    }
+
+    dd {
+        margin: 0 0 0 40px;
+    }
+
+    dl {
+        margin: 1em 0;
+    }
+
+    ul,
+    ol,
+    menu,
+    dl {
+        ul,
+        ol,
+        menu,
+        dl {
+            margin: 0;
+        }
+    }
+
+    legend {
+        padding: 0 2px;
+    }
+
+    fieldset {
+        border-style: groove;
+        border-width: 2px;
+        border: 2px groove ThreeDFace;
+        margin: 0 2px;
+        padding: 0 2px 3px;
+        -webkit-padding-before: 0.35em;
+        -webkit-padding-start: 0.75em;
+        -webkit-padding-end: 0.75em;
+        -webkit-padding-after: 0.625em;
+    }
+
+    ins {
+        background-color: transparent;
+        font-weight: inherit;
+        text-decoration: underline;
+    }
+
+    b,
+    strong {
+        font-weight: 500;
+    }
+
+    i,
+    cite,
+    em,
+    var,
+    address,
+    dfn {
+        font-style: italic;
+        font-weight: inherit;
+    }
+
+    abbr[title],
+    dfn[title] {
+        border-bottom: 0;
+        cursor: default;
+        font-weight: inherit;
+    }
+
+    tt,
+    code,
+    kbd,
+    samp {
+        font-family: monospace;
+        font-weight: inherit;
+    }
+
+    pre {
+        font-family: monospace;
+        margin: 1em 0;
+        white-space: pre;
+    }
+
+    mark {
+        background-color: yellow;
+        color: black;
+        font-style: normal;
+        font-weight: inherit;
+    }
+
+    big {
+        font-size: larger;
+        font-weight: inherit;
+    }
+
+    small {
+        font-size: smaller;
+        font-weight: inherit;
+    }
+
+    sub,
+    sup {
+        font-weight: inherit;
+        line-height: inherit;
+        position: static;
+    }
+
+    sub {
+        font-size: smaller;
+        bottom: 0;
+        vertical-align: sub;
+    }
+
+    sup {
+        font-size: smaller;
+        top: 0;
+        vertical-align: super;
+    }
+
+    ruby {
+        > rt {
+            font-size: 50%;
+        }
+    }
+
+    iframe {
+        border: 2px inset;
+    }
+}
